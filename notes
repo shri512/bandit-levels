@@ -1,17 +1,1 @@
-# Bandit Level 1
 
-## Goal : Retrieve the password stored in a file named "-".
-
-## Challenge : The file name begins with a dash (-), which Linux interprets as an option.
-
-## Commands Used : 
-
-ls
-cat ./-
-
-## What I Learned : A filename starting with "-" can be interpreted as a command-line flag.
-Using:
-./-
-forces Linux to treat it as a file in the current directory.
-
-## Key Concept : Special filenames may require explicit paths.
