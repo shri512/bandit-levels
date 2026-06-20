@@ -1,1 +1,27 @@
+-----level 00-----
+# Goal : password stored in readme
 
+# Commands Used : 
+ls 
+cat readme
+
+# What I learned : 'cat' prints the contents of the file where as 'ls' shows teh directories and file present.
+
+
+-----level 01-----
+# Goal : Find password from the file named -
+
+# Commands Used : 
+ls -a 
+cat ./-
+
+# What I learned : Filename with SPECIAL character needs SPECIAL treatment
+
+
+-----level 02-----
+# Goal : The filename has --spaces in the filename--
+
+# Commands Used : 
+ls -a 
+cat ./"--spaces int he fiename--"
+# What I learned : 
