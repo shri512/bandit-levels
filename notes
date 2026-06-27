@@ -24,4 +24,77 @@ cat ./-
 # Commands Used : 
 ls -a 
 cat ./"--spaces int he fiename--"
-# What I learned : 
+
+# What I learned : file with spaces in the filename needs "<filename>"
+
+
+-----level 03-----
+# Goal : finding hidden files 
+
+# Commands Used : 
+ls -a
+cd inhere
+cat "...Hiding-From-You"
+
+# What I learned : using ls -a we can find hidden files and directories
+
+
+
+-----level 04-----
+# Goal : password in a human-readable file in inhere directory
+
+# Commands Used : 
+ls 
+cd inhere
+ls -la
+file ./-file*
+cat ./-file07
+
+# What I learned :using the file command to identify the filetype, using the * evaluate all the files with filenamme starting from '-file'
+
+
+-----level 05-----
+# Goal : the file has properties :
+         human-readable 
+         1033 bytes in size
+         not executable
+
+# Commands Used : 
+ls 
+find . -size 1033c
+cd maybehere
+cat ./.file2
+
+# What I learned :using find / don't forget to use 'man'
+
+
+-----level 06-----
+# Goal : file is saved somewhere on the server and has properties 
+          owned by user bandit7
+          owned by group bandit6
+          33 bytes in size
+
+# Commands Used : 
+find . -user bandit7 -group bandit6 -size 33c 2>/dev/null
+
+# What I learned : you can group conditions in find command / use '2>/dev/null' to send useless output to void 
+
+
+-----level 07-----
+# Goal : password is stored in data.txt next to the word millionth
+
+# Commands Used : 
+ls 
+file data.txt
+grep "millionth" data.txt
+
+# What I learned : use grep with the word you want to search 
+
+
+-----level 08-----
+# Goal :
+
+# Commands Used : 
+
+
+# What I learned :
