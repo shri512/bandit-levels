@@ -92,9 +92,42 @@ grep "millionth" data.txt
 
 
 -----level 08-----
-# Goal :
+# Goal : password in data.txt and occurs only once in the file 
 
 # Commands Used : 
+ls 
+sort data.txt | uniq -u 
+
+# What I learned : use of piping to make the output from first command the input of second command
 
 
-# What I learned :
+-----level 09-----
+# Goal : password in data.txt in one of the few human-readable strings preceded by several "="
+
+# Commands Used : 
+ls 
+strings data.txt
+
+# What I learned : using "strings" help extarct all the human readable text
+
+
+-----level 10-----
+# Goal : base64 encoded data
+
+# Commands Used : 
+ls 
+cat data.txt | base64 -d
+
+# What I learned : base64 is encoded language 
+
+
+-----level 11-----
+# Goal : lowercase and uppercase letters have been rotated by 13 positions
+
+# Commands Used : 
+ls 
+cat data.txt | tr "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz" "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"
+
+# What I learned : using tr to translate 
+
+
