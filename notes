@@ -131,3 +131,52 @@ cat data.txt | tr "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz" "NOPQRS
 # What I learned : using tr to translate 
 
 
+-----level 12-----
+# Goal : hexdump password
+
+# Common Used :
+xxd -r
+gunzip
+bunzip2
+tar -xf
+
+# What I learned : hexdump is a command line utlity that displays the contents in human readable format.
+
+
+-----level 13-----
+# Goal : no password but the ssh key
+
+# Common Used :
+cat sshkey.private
+exit
+ssh -i password.txt bandit14@bandit.labs.overthewire.org -p 2220
+
+# What I learned : use ssh on the local machine by using -i along with the filename (it directly log into the bandit 14)
+
+
+-----level 14-----
+# Goal : password by submitting the current level password to port 30000 on localhost
+
+# Common Used :
+cat /etc/bandit_pass/bandit14
+nc localhost 30000          ---> it asks for password type and enter
+
+# What I learned : command nc (netcat) connects to the localhost
+
+
+-----level 15-----
+# Goal : password by submitting the current password to the localhost at port 30001 using SSL/TLS encryption
+
+# Common Used :
+openssl s_client connect localhost:30001
+
+# What I learned : 'openssl' is the command/toolkit that helps SSL/TLS encryption. Using SSL/TLS the data is not readable / encrypted 
+
+
+-----level 16-----
+# Goal : 
+
+# Common Used :
+
+
+# What I learned : 
